@@ -22,7 +22,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
+      
       - run: npm install
       - env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
